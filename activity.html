@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="activity.css">
+  <script type="text/javascript">
+  </script>
+</head>
+<body onload=enable_radio(false);>
+  <header class="header">
+    <a href="home.html" class="logo"> <i class="fas fa-h-square"></i> Health Education 8 </a>
+    <div class="navbar1">
+      <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="home.html">Home</a>
+        <a href="module1.html">Module1</a>
+        <a href="module2.html">Module2</a>
+        <a href="module3.html">Module3</a>
+        <a href="activity.html">Activity</a>
+      </nav>
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </div>
+  </header>
+  <div class="account-form">
+    <div id="close-form" class="fas fa-times"></div>
+    <div class="buttons">
+      <span class="btn active login-btn">Health Education 8</span>
+    </div>
+  </div>
+  <section class="heading-link">
+    <h3>Health Education 8 Actvity</h3>
+    <p> <a href="home.html">home</a> / activity</p>
+  </section>
+  <section class="courses">
+    <h1 class="heading"> Module 1 : Activity
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/q1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It is a way of representing a particular gender identity.</h3>
+            <p><label class="container">Gender symbol
+                <input type="radio" name="radio" id="radio" onclick="enable_radio(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Personality
+                <input type="radio" name="radio" id="radio" onclick="enable_radio(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Sex
+                <input type="radio" name="radio" id="radio" onclick="enable_radio(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Sexuality
+                <input type="radio" name="radio" id="radio1" onclick="enable_radio(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal" id="view"
+              disabled>
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    
+                    <p style="font-size: 100px;">Gender Symbol</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It refers to set of roles, characteristics, and expectations of how a man or
+              woman feels, thinks, and acts as influenced by parents, peers, and
+              society. </h3>
+            <p><label class="container">Sexuality
+                <input type="radio" name="radio1" id="radio1" onclick="enable_radio1(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Gender Role
+                <input type="radio" name="radio1" id="radio1" onclick="enable_radio1(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Gender
+                <input type="radio" name="radio1" id="radio1" onclick="enable_radio1(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Gender Equality
+                <input type="radio" name="radio1" id="radio1" onclick="enable_radio1(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal1" id="view1"
+              disabled>
+            <div class="modal fade" id="myModal1" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Gender Role</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It gives a man and a woman to have an equal enjoyment of human rights.</h3>
+            <p><label class="container">Gender
+                <input type="radio" name="radio2" id="radio2" onclick="enable_radio2(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Gender Equality
+                <input type="radio" name="radio2" id="radio2" onclick="enable_radio2(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Sexuality
+                <input type="radio" name="radio2" id="radio2" onclick="enable_radio2(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Gender Role
+                <input type="radio" name="radio2" id="radio2" onclick="enable_radio2(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal2" id="view2"
+              disabled></p>
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Gender Equality</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q4.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It is the total expression of an individual’s self-concept.</h3>
+            <p><label class="container">Androgyny
+                <input type="radio" name="radio3" id="radio2" onclick="enable_radio3(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Gender
+                <input type="radio" name="radio3" id="radio2" onclick="enable_radio3(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Sex
+                <input type="radio" name="radio3" id="radio2" onclick="enable_radio3(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Sexuality
+                <input type="radio" name="radio3" id="radio2" onclick="enable_radio3(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal3" id="view3"
+              disabled></p>
+            <div class="modal fade" id="myModal3" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Sexuality</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q5.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It is a natural and healthy part of life.</h3>
+            <p><label class="container">Gender
+                <input type="radio" name="radio4" id="radio2" onclick="enable_radio4(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Personality
+                <input type="radio" name="radio4" id="radio2" onclick="enable_radio4(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Sex
+                <input type="radio" name="radio4" id="radio2" onclick="enable_radio4(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Sexuality
+                <input type="radio" name="radio4" id="radio2" onclick="enable_radio4(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal4" id="view4"
+              disabled></p>
+            <div class="modal fade" id="myModal4" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Sexuality</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="courses">
+    <h1 class="heading"> Module 2 : Activity
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/q1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It refers to how an individual value relationship.</h3>
+            <p><label class="container">Emotional Self
+                <input type="radio" name="radio5" id="radio2" onclick="enable_radio5(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Ethical Self
+                <input type="radio" name="radio5" id="radio2" onclick="enable_radio5(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Physical Self
+                <input type="radio" name="radio5" id="radio2" onclick="enable_radio5(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Social Self
+                <input type="radio" name="radio5" id="radio2" onclick="enable_radio5(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal5" id="view5"
+              disabled></p>
+            <div class="modal fade" id="myModal5" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Social self</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Melody is a friendly person. She loves to interact with other people. What
+              dimension of one’s personality is manifested?</h3>
+            <p><label class="container"> Social self
+                <input type="radio" name="radio6" id="radio2" onclick="enable_radio6(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Emotional self
+                <input type="radio" name="radio6" id="radio2" onclick="enable_radio6(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Ethical self
+                <input type="radio" name="radio6" id="radio2" onclick="enable_radio6(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container"> Physical self
+                <input type="radio" name="radio6" id="radio2" onclick="enable_radio6(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal6" id="view6"
+              disabled>
+            <div class="modal fade" id="myModal6" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Ethical self</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It refers to how a person feels about himself and others</h3>
+            <p><label class="container">Emotional self
+                <input type="radio" name="radio7" id="radio2" onclick="enable_radio7(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Ethical self
+                <input type="radio" name="radio7" id="radio2" onclick="enable_radio7(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Mental self
+                <input type="radio" name="radio7" id="radio2" onclick="enable_radio7(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Physical self
+                <input type="radio" name="radio7" id="radio2" onclick="enable_radio7(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal7" id="view7"
+              disabled>
+            <div class="modal fade" id="myModal7" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Emotional self</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q4.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Marie is conscious about how she looks physically. What personality
+              dimension is being described?</h3>
+            <p><label class="container">Emotional self
+                <input type="radio" name="radio8" id="radio2" onclick="enable_radio8(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Ethical self
+                <input type="radio" name="radio8" id="radio2" onclick="enable_radio8(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Mental self
+                <input type="radio" name="radio8" id="radio2" onclick="enable_radio8(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Physical self
+                <input type="radio" name="radio8" id="radio2" onclick="enable_radio8(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal8" id="view8"
+              disabled>
+            <div class="modal fade" id="myModal8" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Physical self</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q5.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>It refers to how a man and woman think.</h3>
+            <p><label class="container">Emotional self
+                <input type="radio" name="radio9" id="radio2" onclick="enable_radio9(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Ethical self
+                <input type="radio" name="radio9" id="radio2" onclick="enable_radio9(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Mental self
+                <input type="radio" name="radio9" id="radio2" onclick="enable_radio9(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">Physical self
+                <input type="radio" name="radio9" id="radio2" onclick="enable_radio9(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal9" id="view9"
+              disabled>
+            <div class="modal fade" id="myModal9" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Ethical self</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="courses">
+    <h1 class="heading"> Module 3 : Activity
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/q1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>What factors that plays a significant role in our lives as we regularly
+              watch television, listen to radio, search the internet, read newspaper,
+              posts in Facebook, Instagram, Twitter and other technology platforms? A.
+              culture</h3>
+            <p><label class="container">culture
+                <input type="radio" name="radio10" id="radio2" onclick="enable_radio10(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">family
+                <input type="radio" name="radio10" id="radio2" onclick="enable_radio10(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">media
+                <input type="radio" name="radio10" id="radio2" onclick="enable_radio10(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">peers
+                <input type="radio" name="radio10" id="radio2" onclick="enable_radio10(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal10"
+              id="view10" disabled>
+            <div class="modal fade" id="myModal10" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Media</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Which factor of sexual behavior and sexuality that oftentimes determine
+              your own values?</h3>
+            <p><label class="container">culture
+                <input type="radio" name="radio11" id="radio2" onclick="enable_radio11(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">family
+                <input type="radio" name="radio11" id="radio2" onclick="enable_radio11(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">media
+                <input type="radio" name="radio11" id="radio2" onclick="enable_radio11(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">peers
+                <input type="radio" name="radio11" id="radio2" onclick="enable_radio11(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal11"
+              id="view11" disabled>
+            <div class="modal fade" id="myModal11" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Family</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>What specific norms and standards set by society that could affect your
+              values regarding sexuality?</h3>
+            <p><label class="container">culture
+                <input type="radio" name="radio12" id="radio2" onclick="enable_radio12(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">family
+                <input type="radio" name="radio12" id="radio2" onclick="enable_radio12(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">media
+                <input type="radio" name="radio12" id="radio2" onclick="enable_radio12(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">peers
+                <input type="radio" name="radio12" id="radio2" onclick="enable_radio12(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal12"
+              id="view12" disabled>
+            <div class="modal fade" id="myModal12" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Culture</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q4.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Which of the following factors is associated with people you meet in school
+              that can also have a significant impact on your views on human
+              sexuality?</h3>
+            <p><label class="container">culture
+                <input type="radio" name="radio13" id="radio2" onclick="enable_radio13(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">family
+                <input type="radio" name="radio13" id="radio2" onclick="enable_radio13(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">media
+                <input type="radio" name="radio13" id="radio2" onclick="enable_radio13(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">peers
+                <input type="radio" name="radio13" id="radio2" onclick="enable_radio13(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal13"
+              id="view13" disabled>
+            <div class="modal fade" id="myModal13" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;">Peers</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/q5.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Which of the following choices refers to the way in which we experience
+              and express ourselves as sexual beings?</h3>
+            <p><label class="container">human gender equality
+                <input type="radio" name="radio14" id="radio2" onclick="enable_radio14(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">gender sensitivity
+                <input type="radio" name="radio14" id="radio2" onclick="enable_radio14(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">sexuality
+                <input type="radio" name="radio14" id="radio2" onclick="enable_radio14(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">sexuality crisis
+                <input type="radio" name="radio14" id="radio2" onclick="enable_radio14(this.checked)">
+                <span class="checkmark"></span>
+              </label>
+            </p>
+            <input type="submit" class="btn " value="View Answer" data-toggle="modal" data-target="#myModal14"
+              id="view14" disabled>
+            <div class="modal fade" id="myModal14" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Answer</h4>
+                  </div>
+                  <div class="modal-body" style="background-image: url('./images/heading-bg.jpg'); ">
+                    <p style="font-size: 100px;"> Sexuality</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="footer">
+    </div>
+    <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
